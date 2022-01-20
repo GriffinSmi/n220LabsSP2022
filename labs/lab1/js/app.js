@@ -1,3 +1,5 @@
+var leftX = 220
+var rightX = 320
 
 function setup() {
     // create a canvas that is 800px for my work to show up on
@@ -11,7 +13,7 @@ function setup() {
 
     // color and creation of the sail
     fill(255, 255, 255);
-    triangle(220, 200, 320, 200, 220, 100);
+    triangle(leftX, 200, rightX, 200, leftX, 100);
 
     // color and creation of wooden support post
     fill(254, 154, 67);
@@ -29,7 +31,3 @@ function setup() {
     fill(134, 190, 224);
     rect(0, 350, 800, 550);
 }
-
-// function draw() {
-//     circle(mouseX, mouseY, frameCount/50);
-// }
