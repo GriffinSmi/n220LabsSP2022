@@ -2,7 +2,19 @@
 // 2/8/2022
 // n220
 
-// Global Variable
+// Global Variable/Object
+
+let objBounce = {
+
+    latPos: 0,
+    longPos: 100,
+    latSpeed: 5,
+    longSpeed: 5,
+    bounceColor: "#00FF99",
+    size: 75,
+    // offsetX: objBall.x
+};
+
 let xPos = 0;
 let yPos = 100;
 
@@ -24,26 +36,26 @@ function draw() {
 function drawCircle() {
     background(150);
 
-    xPos = xPos + xSpeed;
-    yPos = yPos + ySpeed;
+    objBounce.latPos = objBounce.latPos + objBounce.latSpeed;
+    objBounce.longPos = objBounce.longPos + objBounce.longSpeed;
 
     fill(50, 100, 200);
-    circle(xPos, yPos, 50);
+    circle(objBounce.latPos, objBounce.longPos, 50);
 
-    if (xPos == 800) {
-        xSpeed = -5;
+    if (objBounce.latPos == 800) {
+        objBounce.latSpeed = -5;
     }
 
-    if (yPos == 600) {
-        ySpeed = -5;
+    if (objBounce.longPos == 600) {
+        objBounce.longSpeed = -5;
     }
 
-    if (xPos == 0) {
-        xSpeed = 5;
+    if (objBounce.latPos == 0) {
+        objBounce.latSpeed = 5;
     }
 
-    if (yPos == 0) {
-        ySpeed = 5;
+    if (objBounce.longPos == 0) {
+        objBounce.longSpeed = 5;
     }
 
 }
