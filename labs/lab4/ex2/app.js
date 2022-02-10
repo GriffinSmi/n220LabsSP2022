@@ -5,10 +5,11 @@
 // Global Variable and Object
 
 let objBall = {
-
+    x: 0,
+    y: 0,
     ballColor: "#00FF99",
     size: 75,
-    // offsetX: objBall.x
+    offsetX: 0,
 };
 
 // Create a setup Function where I create a canvas and a background color so that it is visible
@@ -23,7 +24,6 @@ function setup() {
 function draw() {
     objBall.x = mouseX;
     objBall.y = mouseY;
-    // objBall.offsetX = 
     drawBall();
 
 }
@@ -34,13 +34,22 @@ function drawBall() {
 
     fill(objBall.ballColor);
 
-    circle(objBall.x, objBall.y, objBall.size);
     if (mouseIsPressed === true) {
-        objBall.x = objBall.x + 1
+
+        if (objBall.offsetX != 0) {
+            objBall.offsetX = objBall.offsetX - 1;
+        }
+
+        //console.log("ball");
+
     }
 
     else {
-        objBall.x = objBall.x - 1
+        objBall.offsetX = objBall.offsetX + 1;
+
     }
+
+    circle((objBall.x + objBall.offsetX), objBall.y, objBall.size);
+
 
 }
