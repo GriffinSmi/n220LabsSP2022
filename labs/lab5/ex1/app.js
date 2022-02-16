@@ -2,12 +2,14 @@
 // 2/16/2022
 // n220
 
+
+// get the ID from html to link js to html
 let dvSquareOne = document.getElementById("squareOne");
 
 dvSquareOne.style.backgroundColor = "#00FF00";
 dvSquareOne.style.width = "100px";
 dvSquareOne.style.height = "100px";
-dvSquareOne.innerHTML = "hello";
+dvSquareOne.innerHTML = "Bigger!";
 
 // Make a var
 let size = 100;
