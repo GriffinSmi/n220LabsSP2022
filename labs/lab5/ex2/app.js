@@ -1,3 +1,7 @@
+// Griffin Smith
+// 2/16/2022
+// n220
+
 let dvSquare = document.getElementById("square");
 
 dvSquare.style.backgroundColor = "#00FFFF";
