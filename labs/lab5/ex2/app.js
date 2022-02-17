@@ -15,11 +15,11 @@ dvSquare.style.height = "100px";
 
 // Create a function to change color when the mouse is hovering over the box
 function mouseOver() {
-    let boxChange = document.getElementById("square").style.backgroundColor = "#000000";
+    dvSquare.style.backgroundColor = "#000000";
 }
 
 
 // Create a function to change color when the mouse is not hovering over the box
 function mouseOut() {
-    let boxChange = document.getElementById("square").style.backgroundColor = "#00FFFF";
+    dvSquare.style.backgroundColor = "#00FFFF";
 }
