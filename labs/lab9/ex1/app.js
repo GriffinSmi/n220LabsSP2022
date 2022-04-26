@@ -5,9 +5,7 @@
 
 let dvBoxes = document.getElementById("boxes");
 
-// dvBoxes.style.height = 1000;
-
-// 
+// Create an array for the boxes and set a color, height, and width for each of them.
 let objects = [
 
     { color: "#FF0000", height: 100, width: 300 },
@@ -23,7 +21,7 @@ let objects = [
 
 
 
-// 
+// Create a function that will take the objects from the array and display them in the div.
 function theBoxes() {
 
 

@@ -2,10 +2,12 @@
 // 4/6/2022
 // n220
 
-
+// Link the html to the js
 let dvInputNumber = document.getElementById("inputNumber");
 let dvWinner = document.getElementById("winner");
 
+// Create a function that will take a user input
+// The user input will spit out winner or loser depending on if they have three 1's in a row. 
 function guess() {
 
     let guess = dvInputNumber.value;
@@ -26,7 +28,7 @@ function guess() {
 
 
     }
-
+    // Create an if statement declaring the user a winner or loser
     if (win == true) {
         dvWinner.innerHTML = "Winner";
     } else {
